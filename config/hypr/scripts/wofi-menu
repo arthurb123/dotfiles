@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec ~/.config/rofi/launchers/type-2/launcher.sh #wofi -S drun -G -I -W 500 -H 400

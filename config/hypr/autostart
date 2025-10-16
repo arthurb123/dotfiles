@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+# variables
+config=$HOME/.config/hypr
+scripts=$config/scripts
+
+# applications
+# xbindkeys &
+waybar &
+volumeicon &
+nm-applet &
+
+# notification agent
+dunst &
+
+# policy kit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# locking
+#swayidle -w timeout 60 '$HOME/.config/hypr/scripts/lock' timeout 420 'systemctl suspend' resume 'swaymsg "output * dpms on "' before-sleep 'swaylock'
+#swayidle lock 'swaymsg "output * dpms on"&& swaylock' unlock 'kill -s 1 $(pgrep swaylock)'
