@@ -43,6 +43,8 @@ if [[ "$install_packages" =~ ^[Yy]$ ]]; then
     fcitx5
     sddm
     nvm
+    ttf-font-awesome-5
+    ttf-roboto
   )
 
   for pkg in "${packages[@]}"; do
